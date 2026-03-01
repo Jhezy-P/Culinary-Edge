@@ -26,7 +26,7 @@ body{
 header{
   position:sticky;
   top:0;
-  background:linear-gradient(90deg,#2c3e50,#34495e);
+  background:linear-gradient(90deg,#e9ac29,#215a94);
   z-index:1000;
   padding:18px 10%;
   display:flex;
@@ -392,6 +392,7 @@ section{
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -404,23 +405,48 @@ section{
 </nav>
 </header>
 
-<section id="home">
-<h2>Welcome to Culinary Edge</h2>
-<p style="text-align:center; max-width:900px; margin:0 auto 20px;">
-Cooking is an art, a science, and a journey. Here at <strong>Culinary Edge</strong>, we guide beginners and enthusiasts alike to create delicious meals with confidence.
-</p>
-<p style="text-align:center; max-width:900px; margin:0 auto 40px;">
-Explore our step-by-step lessons, watch tutorial videos for every recipe, and test your knowledge with interactive quizzes designed for food lovers.
-</p>
-<div class="carousel">
-<img src="https://www.storandtfarms.com/wp-content/uploads/2017/08/Fresh-Ingredients-1024x585.png" class="active" alt="Fresh ingredients">
-<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1000" alt="Cooking on stove">
-<img src="https://www.escoffier.edu/wp-content/uploads/2019/10/Fancy-plated-meat-dish-with-vegetables-on-a-white-plate-768.jpg" alt="Plated dish">
-<div class="carousel-indicators">
-<span class="active" onclick="showSlide(0)"></span>
-<span onclick="showSlide(1)"></span>
-<span onclick="showSlide(2)"></span>
-</div>
+<section id="home" style="background: url('https://img.freepik.com/free-photo/cooking-healthy-dish_1098-19852.jpg?semt=ais_rp_progressive&w=740&q=80') center/cover no-repeat; color:white; position:relative;">
+  <div style="background: rgba(0,0,0,0.5); padding:100px 10%; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+    
+
+    <div style="flex:1 1 450px; min-width:300px; margin-bottom:30px;">
+      <h2 style="font-size:3em; margin-bottom:20px; font-family:'Playfair Display', serif; color:#ffe5b4;">Welcome to Culinary Edge</h2>
+      <p style="font-size:1.15em; line-height:1.8; margin-bottom:20px;">
+        Cooking is an art, a science, and a journey. <strong>Culinary Edge</strong> guides beginners and enthusiasts alike to create delicious meals with confidence.
+      </p>
+      <p style="font-size:1.1em; line-height:1.7; margin-bottom:30px;">
+        Explore step-by-step lessons, watch tutorial videos for every recipe, and test your knowledge with interactive quizzes designed for food lovers.
+      </p>
+      <a href="#lessons" style="background:#e67e22; color:white; padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:600; transition:0.3s;">Start Learning 🍳</a>
+    </div>
+
+
+    <div style="flex:1 1 350px; min-width:250px; display:grid; gap:20px;">
+      <div style="background:rgba(255,255,255,0.1); padding:20px; border-radius:12px; backdrop-filter:blur(6px); box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+        <h3 style="margin-bottom:12px; color:#ffd699;">📹 Video Tutorials</h3>
+        <p>Watch high-quality cooking videos and follow along step-by-step.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.1); padding:20px; border-radius:12px; backdrop-filter:blur(6px); box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+        <h3 style="margin-bottom:12px; color:#ffd699;">🧑‍🍳 Step-by-Step Lessons</h3>
+        <p>Learn essential techniques, from knife skills to plating like a pro.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.1); padding:20px; border-radius:12px; backdrop-filter:blur(6px); box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+        <h3 style="margin-bottom:12px; color:#ffd699;">📝 Interactive Quizzes</h3>
+        <p>Test your knowledge and reinforce what you've learned in a fun way.</p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="carousel" style="background: rgba(0,0,0,0.35); padding:20px; border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.2); max-width:1000px; margin:40px auto; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+  <img src="https://img.freepik.com/free-photo/top-view-cropped-hands-senior-cook-unrecognizable-cutting-carrot-cooking-vegetable-stew_1098-20510.jpg?semt=ais_rp_progressive&w=740&q=80" class="active" alt="Fresh ingredients">
+  <img src="https://www.health.com/thmb/wfkIOj5dW5H6QLhXqEFHw87ow08=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-GettyImages-1477430966-506a007e48744d5488a6ee1c0b729134.jpg" alt="Cooking on stove">
+  <img src="https://media.post.rvohealth.io/wp-content/uploads/sites/2/2020/02/GRT-filipino-food-dishes-1296x728-header.jpg" alt="Plated dish">
+  <div class="carousel-indicators">
+    <span class="active" onclick="showSlide(0)"></span>
+    <span onclick="showSlide(1)"></span>
+    <span onclick="showSlide(2)"></span>
+  </div>
 </div>
 </section>
 
@@ -527,7 +553,7 @@ Explore our step-by-step lessons, watch tutorial videos for every recipe, and te
 <ul><li>Chicken</li><li>Soy sauce</li><li>Vinegar</li><li>Garlic</li><li>Bay leaves</li><li>Peppercorns</li></ul>
 <strong>Instructions:</strong>
 <ol><li>Marinate chicken in soy sauce and garlic.</li><li>Add vinegar, bay leaves, peppercorns.</li><li>Simmer 30–40 minutes.</li><li>Reduce sauce until slightly thick.</li><li>Serve with rice.</li></ol>
-<video autplay muted controls><source src="https://jhezy-p.github.io/make-pancake/0301.mp4" type="video/mp4"></video>
+<video autoplay muted controls><source src="https://jhezy-p.github.io/make-pancake/0301.mp4" type="video/mp4"></video>
 </div>
 
 <div class="recipe">
@@ -669,8 +695,67 @@ document.getElementById('quizForm').addEventListener('submit', function(e){
 });
 </script>
 
-<footer>
-<p>© 2026 Culinary Edge. All rights reserved.</p>
+<footer style="background:linear-gradient(135deg,#2c3e50,#1f2a36); color:#ecf0f1; padding:60px 8% 25px; width:100%; margin-top:60px;">
+
+  <!-- TOP SECTION -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:50px;">
+
+    <!-- Brand Column -->
+    <div style="min-width:180px;">
+      <h4 style="margin-bottom:18px; color:#ffffff;">Culinary Edge</h4>
+      <p><a href="#home" style="color:#bdc3c7; text-decoration:none;">Home</a></p>
+      <p><a href="#lessons" style="color:#bdc3c7; text-decoration:none;">Lessons</a></p>
+      <p><a href="#recipes" style="color:#bdc3c7; text-decoration:none;">Recipes</a></p>
+      <p><a href="#quiz" style="color:#bdc3c7; text-decoration:none;">Quiz</a></p>
+    </div>
+
+    <!-- Contact Column -->
+    <div style="min-width:220px;">
+      <h4 style="margin-bottom:18px; color:#ffffff;">Contact</h4>
+      <p style="color:#bdc3c7;">culinaryedgesupport@yahoo.com</p>
+      <p style="color:#bdc3c7;">+63 917 123 4567</p>
+      <p style="color:#bdc3c7;">Cebu City, Philippines</p>
+      <p style="color:#bdc3c7;">Mon – Fri | 9AM – 6PM</p>
+    </div>
+
+    <!-- Resources Column -->
+    <div style="min-width:200px;">
+      <h4 style="margin-bottom:18px; color:#ffffff;">Resources</h4>
+      <p style="color:#bdc3c7;">Beginner Tutorials</p>
+      <p style="color:#bdc3c7;">Kitchen Guides</p>
+      <p style="color:#bdc3c7;">Cooking Techniques</p>
+      <p style="color:#bdc3c7;">Video Lessons</p>
+    </div>
+
+    <!-- Social Column -->
+    <div style="min-width:200px;">
+      <h4 style="margin-bottom:18px; color:#ffffff;">Follow Us</h4>
+      <p style="color:#bdc3c7;">Facebook: Culinary Edge</p>
+      <p style="color:#bdc3c7;">Instagram: culinary_edge</p>
+      <p style="color:#bdc3c7;">YouTube: Culinary Edge </p>
+      <p style="color:#bdc3c7;">TikTok: learnatculinaryedge</p>
+    </div>
+
+  </div>
+
+  <!-- DIVIDER -->
+  <div style="border-top:1px solid #34495e; margin:40px 0 20px;"></div>
+
+  <!-- BOTTOM SECTION -->
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; font-size:0.85em; color:#bdc3c7;">
+
+    <div>
+      <span style="margin-right:15px;">Terms & Conditions</span>
+      <span style="margin-right:15px;">Privacy Policy</span>
+      <span>Security</span>
+    </div>
+
+    <div>
+      © 2026 Culinary Edge. All rights reserved.
+    </div>
+
+  </div>
+
 </footer>
 
 </body>
